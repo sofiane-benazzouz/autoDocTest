@@ -6,6 +6,8 @@
 Bienvenue sur la meilleure documentation jamais créée!
 ======================================================
 
+.. include:: ../../README.rst
+
 .. toctree::
     :maxdepth: 2
     :caption: Contenus
@@ -47,5 +49,4 @@ Tableau test
 +-------------+-------------+------------+-------------+------------+  
 
 
-.. include:: ../README.rst
 
