@@ -7,8 +7,13 @@ Bienvenue sur la meilleure documentation jamais créée!
 ======================================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 2
+    :caption: Contenus
+    
+    guides
+    tutoriels
+    faq
+    référentiel
 
 
 
@@ -40,3 +45,7 @@ Tableau test
 +-------------+-------------+------------+-------------+-----------+  
 |    JOUR3    +             +            +       X     +           +
 +-------------+-------------+------------+-------------+-----------+  
+
+.. include:: ../README.rst
+
+
