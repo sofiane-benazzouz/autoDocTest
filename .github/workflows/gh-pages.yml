@@ -50,5 +50,3 @@ jobs:
           GITHUB_TOKEN: ${​​​​{​​​​ secrets.GITHUB_TOKEN }​​​​}​​​​
           BRANCH: gh-pages     # <- Branche sur laquelle seront commités les fichiers
           FOLDER: docs/build/html/  # <- Dossier contenant notre documentation générée
-
-          
