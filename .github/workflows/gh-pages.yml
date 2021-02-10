@@ -35,10 +35,8 @@ jobs:
         run: |
           pip3 install setuptools
           pip3 install sphinx recommonmark
+          pip3 install sphinx-rtd-theme
 
-      - name: "Add Sphinx Theme"
-        run: |
-        pip3 install sphinx-rtd-theme
 
       - name: "Build Sphinx Doc"
         run: |
