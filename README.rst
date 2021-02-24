@@ -37,5 +37,5 @@ Lancement des tests
 Utilisez la commande ``npm run test``
 
 Plus d'aide
-***********
+===========
 Pour plus d'aide, ou pour savoir comment contribuer au projet, allez voir la documentation en ligne sur https://zarhkoh.github.io/autoDocTest/
