@@ -9,8 +9,8 @@ Vous pouvez retrouver le repo GitHub à cette adresse: https://github.com/Zarhko
 .. toctree::
     :maxdepth: 2
     :caption: Catégories:
-    
-    index
+
+
     guides
     tutoriels
     faq
