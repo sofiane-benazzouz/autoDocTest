@@ -13,7 +13,8 @@ Bienvenue sur la meilleure documentation jamais créée!
     guides
     tutoriels
     faq
-    référentiel
+    contribute
+    rgpd
 
 
 
