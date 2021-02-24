@@ -1,4 +1,4 @@
-# guides 
+# Guide
 
 Un module Node.js pour charger récursivement un répertoire de fichiers YAML, JSON et Markdown dans un objet JavaScript.
 
