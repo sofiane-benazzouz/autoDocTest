@@ -1,6 +1,6 @@
 
 
-Bienvenue sur la meilleure documentation jamais créée!
+Bienvenue sur la meilleure documentation jamais créée par la meilleure équipe!
 ======================================================
 
 .. toctree::
