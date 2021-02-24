@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# FAQ
 
 - [Spell-check doesn't work; how do I enable it?](#spell-check-doesnt-work-how-do-i-enable-it)
 - [Some of my Markdown elements aren't highlighted](#some-of-my-markdown-elements-arent-highlighted)
