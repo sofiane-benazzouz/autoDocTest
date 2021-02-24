@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'autoDocTest'
+project = 'Documentation Automatique Test'
 copyright = '2021, Jérémy, Ones, Onésime, Sofiane, Sullivan'
 author = 'Jérémy, Ones, Onésime, Sofiane, Sullivan'
 
