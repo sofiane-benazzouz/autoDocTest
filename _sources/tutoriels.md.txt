@@ -230,7 +230,7 @@ node '03 - Streams.js'
 
 **[soso]**
 
-## Continue Learning
+## Continuer à apprendre
 
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/javascript.svg" width="50px" height="50px" />]</a>
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/nodejs.svg" width="50px" height="50px" />]</a>
