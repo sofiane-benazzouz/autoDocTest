@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KOM C LA FAQ &#8212; Documentation autoDocTest 1.0</title>
+    <title>Frequently Asked Questions &#8212; Documentation autoDocTest 1.0</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/groundwork.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -31,7 +31,7 @@
           <a href="tutoriels.html" title="KOM C LE TUTORIEL"
              accesskey="P">précédent</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Documentation autoDocTest 1.0</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">KOM C LA FAQ</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Frequently Asked Questions</a></li> 
       </ul>
     </div>  
 
@@ -40,17 +40,7 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="kom-c-la-faq">
-<h1>KOM C LA FAQ<a class="headerlink" href="#kom-c-la-faq" title="Lien permanent vers ce titre">¶</a></h1>
-<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don”t look even slightly believable. If you are going to use a passage of Lorem Ipsum, <strong>you need</strong> to be sure there isn”t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-<div class="section" id="amazing-doc">
-<h2>Amazing Doc<a class="headerlink" href="#amazing-doc" title="Lien permanent vers ce titre">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">isn</span><span class="s1">&#39;t it ?</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="frequently-asked-questions">
+  <div class="section" id="frequently-asked-questions">
 <h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Lien permanent vers ce titre">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="#spell-check-doesnt-work-how-do-i-enable-it">Spell-check doesn”t work; how do I enable it?</a></p></li>
@@ -60,39 +50,39 @@
 <li><p><a class="reference external" href="#syntax-highlighting-is-broken-after-uninstall">Syntax-highlighting is broken after uninstall</a></p></li>
 <li><p><a class="reference external" href="#trailing-whitespace-is-automatically-removed-but-i-dont-want-that">Trailing whitespace is automatically removed, but I don”t want that</a></p></li>
 </ul>
-<div class="section" id="spell-check-doesn-t-work-how-do-i-enable-it">
-<h2>Spell-check doesn”t work; how do I enable it?<a class="headerlink" href="#spell-check-doesn-t-work-how-do-i-enable-it" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The core-package <code class="docutils literal notranslate"><span class="pre">spell-check</span></code> doesn”t scan documents in the <code class="docutils literal notranslate"><span class="pre">text.md</span></code> by default. You can easily add this yourself:</p>
+<div class="section" id="le-correcteur-orthographique-ne-fonctionne-pas-comment-l-activer">
+<h2>Le correcteur orthographique ne fonctionne pas ; comment l”activer ?<a class="headerlink" href="#le-correcteur-orthographique-ne-fonctionne-pas-comment-l-activer" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le paquet de base « vérification orthographique » ne scanne pas les documents dans le « text.md » par défaut. Vous pouvez facilement l”ajouter vous-même :</p>
 <ul class="simple">
-<li><p>Open the Atom settings, and find the Packages tab</p></li>
-<li><p>Search for the <code class="docutils literal notranslate"><span class="pre">spell-check</span></code> package; you can find it under the Core Packages</p></li>
-<li><p>Open the settings for <code class="docutils literal notranslate"><span class="pre">spell-check</span></code></p></li>
-<li><p>Append <code class="docutils literal notranslate"><span class="pre">text.md</span></code> to the list of grammars (make sure the scopes are comma-separated)</p></li>
-<li><p>Reload Atom to make sure the updated settings take effect</p></li>
+<li><p>Ouvrez les paramètres Atom, et trouvez l”onglet Paquets</p></li>
+<li><p>Recherchez le paquet « correcteur orthographique » ; vous pouvez le trouver sous les paquets de base</p></li>
+<li><p>Ouvrez les paramètres du « correcteur orthographique ».</p></li>
+<li><p>Ajoutez <code class="docutils literal notranslate"><span class="pre">text.md</span></code> à la liste des grammaires (veillez à ce que les champs soient séparés par des virgules)</p></li>
+<li><p>Rechargez Atom pour vous assurer que les paramètres mis à jour prennent effet</p></li>
 </ul>
 </div>
-<div class="section" id="some-of-my-markdown-elements-aren-t-highlighted">
-<h2>Some of my Markdown elements aren”t highlighted<a class="headerlink" href="#some-of-my-markdown-elements-aren-t-highlighted" title="Lien permanent vers ce titre">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">language-markdown</span></code> parses your Markdown document; it does not directly color the different elements. This is done by the syntax-theme you are using. There”s a good chance that your syntax-theme doesn”t support all the different elements that <code class="docutils literal notranslate"><span class="pre">language-markdown</span></code> recognizes. You can ask the author of the theme to add better support for <code class="docutils literal notranslate"><span class="pre">language-markdown</span></code>, or <a class="reference external" href="http://flight-manual.atom.io/using-atom/sections/basic-customization/#style-tweaks">add styles to your custom stylesheet</a>. You can also try one of the tried and tested syntax-themes featured above. If you can”t get it to work, feel free to <a class="reference external" href="https://github.com/burodepeper/language-markdown/issues/new/">open an issue</a>, and I”ll see what I can do.</p>
+<div class="section" id="certains-de-mes-elements-de-markdown-ne-sont-pas-mis-en-evidence">
+<h2>Certains de mes éléments de Markdown ne sont pas mis en évidence<a class="headerlink" href="#certains-de-mes-elements-de-markdown-ne-sont-pas-mis-en-evidence" title="Lien permanent vers ce titre">¶</a></h2>
+<p>La fonction « language markdown » analyse votre document Markdown ; elle ne colore pas directement les différents éléments. Cela est fait par le thème syntaxique que vous utilisez. Il y a de fortes chances que votre thème syntaxique ne prenne pas en charge tous les différents éléments que « language markdown » reconnaît. Vous pouvez demander à l”auteur du thème d”ajouter un meilleur support pour « language markdown », ou [ajouter des styles à votre feuille de style personnalisée] (http://flight-manual.atom.io/using-atom/sections/basic-customization/#style-tweaks). Vous pouvez également essayer l”un des thèmes syntaxiques éprouvés présentés ci-dessus. Si vous ne parvenez pas à le faire fonctionner, n”hésitez pas à [ouvrir un numéro] (https://github.com/burodepeper/language-markdown/issues/new/), et je verrai ce que je peux faire.</p>
 </div>
-<div class="section" id="which-elements-of-markdown-are-supported">
-<h2>Which elements of Markdown are supported?<a class="headerlink" href="#which-elements-of-markdown-are-supported" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Because there is no clear Markdown standard, I”ve chosen to follow the <a class="reference external" href="http://spec.commonmark.org/">CommonMark Spec</a> as closely as possible within the Atom environment. On top of that, I”ve implemented support for a few extensions: Github Flavored Markdown, Markdown Extra, CriticMark, Front Matter, and R Markdown. Together, I believe these specs cover a solid 98% of your day-to-day Markdown needs. If you feel that an element is missing, please <a class="reference external" href="https://github.com/burodepeper/language-markdown/issues/new/">open an issue</a>.</p>
-<div class="section" id="notes-on-implementation">
-<h3>Notes on implementation<a class="headerlink" href="#notes-on-implementation" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="quels-sont-les-elements-de-la-demarque-qui-sont-pris-en-charge">
+<h2>Quels sont les éléments de la démarque qui sont pris en charge ?<a class="headerlink" href="#quels-sont-les-elements-de-la-demarque-qui-sont-pris-en-charge" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Comme il n”y a pas de norme de démarquage claire, j”ai choisi de suivre la [CommonMark Spec] (http://spec.commonmark.org/) aussi fidèlement que possible dans l”environnement Atom. De plus, j”ai mis en place un support pour quelques extensions : Github Flavored Markdown, Markdown Extra, CriticMark, Front Matter et R Markdown. Ensemble, je pense que ces spécifications couvrent 98% de vos besoins quotidiens en matière de démarque. Si vous pensez qu”un élément manque, veuillez [ouvrir un numéro] (https://github.com/burodepeper/language-markdown/issues/new/).</p>
+<div class="section" id="notes-sur-la-mise-en-oeuvre">
+<h3>Notes sur la mise en œuvre<a class="headerlink" href="#notes-sur-la-mise-en-oeuvre" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li><p>Raw <code class="docutils literal notranslate"><span class="pre">html</span></code> is included when you have the default <code class="docutils literal notranslate"><span class="pre">language-html</span></code> grammar enabled</p></li>
-<li><p>The Github Flavored <code class="docutils literal notranslate"><span class="pre">task-lists</span></code> are implemented as part of “normal” <code class="docutils literal notranslate"><span class="pre">lists</span></code></p></li>
-<li><p>Setext-headers (underlined-headers) are not supported</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">indented-code-blocks</span></code> have been disabled to prevent false-positives; use <code class="docutils literal notranslate"><span class="pre">fenced-code-blocks</span></code> instead (<a class="reference external" href="https://github.com/burodepeper/language-markdown/issues/88#issuecomment-183344420">more details</a>)</p></li>
-<li><p>Github tables require pipes at the start of each line, and cells need a padding of at least one space; this is a suggested convention to prevent false positives</p></li>
+<li><p>Les « listes de tâches » aromatisées à la Github sont mises en œuvre dans le cadre des « listes » normales.</p></li>
+<li><p>Les en-têtes de texte (soulignés) ne sont pas pris en charge</p></li>
+<li><p>Les « blocs de code indenté » ont été désactivés pour éviter les faux positifs ; utilisez plutôt des « blocs de code clôturé » (<a class="reference external" href="https://github.com/burodepeper/language-markdown/issues/88#issuecomment-183344420">plus de détails</a>)</p></li>
+<li><p>Les tables Github nécessitent des tuyaux au début de chaque ligne, et les cellules ont besoin d”un rembourrage d”au moins un espace ; c”est une convention suggérée pour éviter les faux positifs</p></li>
 </ul>
 </div>
 </div>
-<div class="section" id="autocompletion-doesn-t-work">
-<h2>Autocompletion doesn”t work<a class="headerlink" href="#autocompletion-doesn-t-work" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Autocompletion doesn”t work out-of-the-box with Markdown documents. It is possible to enable it, but it might need some tinkering. In the <code class="docutils literal notranslate"><span class="pre">autocomplete-plus</span></code> settings, make sure that Markdown files aren”t blacklisted. Additionally, it might help to switch the default provider to Fuzzy.</p>
-<p>For Atom to index your Markdown documents as symbols, you have to add the following to your <code class="docutils literal notranslate"><span class="pre">config.cson</span></code>:</p>
+<div class="section" id="l-auto-completion-ne-fonctionne-pas">
+<h2>L”auto-complétion ne fonctionne pas<a class="headerlink" href="#l-auto-completion-ne-fonctionne-pas" title="Lien permanent vers ce titre">¶</a></h2>
+<p>L”auto-complétion ne fonctionne pas avec les documents de démarque. Il est possible de l”activer, mais il pourrait nécessiter quelques retouches. Dans les paramètres de l”option <code class="docutils literal notranslate"><span class="pre">autocomplete-plus</span></code>, assurez-vous que les fichiers Markdown ne sont pas mis sur liste noire. De plus, il peut être utile de changer le fournisseur d”accès par défaut pour Fuzzy.</p>
+<p>Pour qu”Atom puisse indexer vos documents Markdown sous forme de symboles, vous devez ajouter ce qui suit à votre fichier <code class="docutils literal notranslate"><span class="pre">config.cson</span></code> :</p>
 <div class="highlight-coffee notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;.text.md&#39;</span><span class="o">:</span>
     <span class="nv">autocomplete:</span>
         <span class="nv">symbols:</span>
@@ -101,21 +91,21 @@
                 <span class="nv">typePriority: </span><span class="mi">1</span>
 </pre></div>
 </div>
-<p>You can find additional information in <a class="reference external" href="https://github.com/burodepeper/language-markdown/issues/150">this issue</a>.</p>
+<p>Vous trouverez des informations complémentaires dans [ce numéro] (https://github.com/burodepeper/language-markdown/issues/150).</p>
 </div>
-<div class="section" id="syntax-highlighting-is-broken-after-uninstall">
-<h2>Syntax-highlighting is broken after uninstall<a class="headerlink" href="#syntax-highlighting-is-broken-after-uninstall" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The core-package <code class="docutils literal notranslate"><span class="pre">language-gfm</span></code> is automatically disabled (unless you”ve enabled the setting that prevents this) when using <code class="docutils literal notranslate"><span class="pre">language-markdown</span></code> to avoid any conflicts. Because <code class="docutils literal notranslate"><span class="pre">language-markdown</span></code> is intended as a drop-in replacement you most likely won”t need both anyway. However, if you uninstall <code class="docutils literal notranslate"><span class="pre">language-markdown</span></code>, <code class="docutils literal notranslate"><span class="pre">language-gfm</span></code> doesn”t automatically get re-activated. There”s no API available to do this, so you”ll have to re-activate <code class="docutils literal notranslate"><span class="pre">language-gfm</span></code> manually, which is quite easy.</p>
+<div class="section" id="la-mise-en-evidence-de-la-syntaxe-est-cassee-apres-la-desinstallation">
+<h2>La mise en évidence de la syntaxe est cassée après la désinstallation<a class="headerlink" href="#la-mise-en-evidence-de-la-syntaxe-est-cassee-apres-la-desinstallation" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le paquet de base <code class="docutils literal notranslate"><span class="pre">language-gfm</span></code> est automatiquement désactivé (sauf si vous avez activé le paramètre qui l”empêche) lors de l”utilisation de <code class="docutils literal notranslate"><span class="pre">language-markdown</span></code> pour éviter tout conflit. Parce que <code class="docutils literal notranslate"><span class="pre">language-markdown</span></code> est conçu comme un remplacement de remplacement, vous n”aurez probablement pas besoin des deux de toute façon. Cependant, si vous désinstallez <code class="docutils literal notranslate"><span class="pre">language-markdown</span></code>, <code class="docutils literal notranslate"><span class="pre">language-gfm</span></code> ne sera pas automatiquement réactivé. Il n”y a pas d”API disponible pour faire cela, donc vous devrez réactiver <code class="docutils literal notranslate"><span class="pre">language-gfm</span></code> manuellement, ce qui est assez facile.</p>
 <ol class="simple">
-<li><p>Open the « Settings » and go to the « Packages » tab</p></li>
-<li><p>Search for <code class="docutils literal notranslate"><span class="pre">language-gfm</span></code></p></li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Enable</span></code> to re-activate it</p></li>
-<li><p>You probably want to reload Atom to make sure the change takes effect</p></li>
+<li><p>Ouvrez les « Paramètres » et allez à l”onglet « Paquets</p></li>
+<li><p>Recherche de « langue-gfm</p></li>
+<li><p>Cliquez sur « Activer » pour le réactiver</p></li>
+<li><p>Vous voulez probablement recharger Atom pour vous assurer que le changement prend effet</p></li>
 </ol>
 </div>
-<div class="section" id="trailing-whitespace-is-automatically-removed-but-i-don-t-want-that">
-<h2>Trailing whitespace is automatically removed, but I don”t want that<a class="headerlink" href="#trailing-whitespace-is-automatically-removed-but-i-don-t-want-that" title="Lien permanent vers ce titre">¶</a></h2>
-<p>By default, Atom removes all trailing whitespace when a file is saved. You can disable it by setting the following flag in your <code class="docutils literal notranslate"><span class="pre">config.cson</span></code> for the <code class="docutils literal notranslate"><span class="pre">.md.text</span></code> scope. For more background, see <a class="reference external" href="https://github.com/burodepeper/language-markdown/issues/115">#115</a>.</p>
+<div class="section" id="les-espaces-vides-sont-automatiquement-supprimes-mais-je-ne-veux-pas-que">
+<h2>Les espaces vides sont automatiquement supprimés, mais je ne veux pas que<a class="headerlink" href="#les-espaces-vides-sont-automatiquement-supprimes-mais-je-ne-veux-pas-que" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Par défaut, Atom supprime tous les espaces arrière lors de l”enregistrement d”un fichier. Vous pouvez le désactiver en plaçant le drapeau suivant dans votre fichier <code class="docutils literal notranslate"><span class="pre">config.cson</span></code> pour la portée <code class="docutils literal notranslate"><span class="pre">.md.text</span></code>. Pour plus d”informations, voir <a class="reference external" href="https://github.com/burodepeper/language-markdown/issues/115">#115</a>.</p>
 <div class="highlight-coffee notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;*&#39;</span><span class="o">:</span>
   <span class="c1"># all current config</span>
 <span class="s">&#39;.md.text&#39;</span><span class="o">:</span>
@@ -135,20 +125,16 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table des matières</a></h3>
   <ul>
-<li><a class="reference internal" href="#">KOM C LA FAQ</a><ul>
-<li><a class="reference internal" href="#amazing-doc">Amazing Doc</a></li>
+<li><a class="reference internal" href="#">Frequently Asked Questions</a><ul>
+<li><a class="reference internal" href="#le-correcteur-orthographique-ne-fonctionne-pas-comment-l-activer">Le correcteur orthographique ne fonctionne pas ; comment l”activer ?</a></li>
+<li><a class="reference internal" href="#certains-de-mes-elements-de-markdown-ne-sont-pas-mis-en-evidence">Certains de mes éléments de Markdown ne sont pas mis en évidence</a></li>
+<li><a class="reference internal" href="#quels-sont-les-elements-de-la-demarque-qui-sont-pris-en-charge">Quels sont les éléments de la démarque qui sont pris en charge ?</a><ul>
+<li><a class="reference internal" href="#notes-sur-la-mise-en-oeuvre">Notes sur la mise en œuvre</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#frequently-asked-questions">Frequently Asked Questions</a><ul>
-<li><a class="reference internal" href="#spell-check-doesn-t-work-how-do-i-enable-it">Spell-check doesn”t work; how do I enable it?</a></li>
-<li><a class="reference internal" href="#some-of-my-markdown-elements-aren-t-highlighted">Some of my Markdown elements aren”t highlighted</a></li>
-<li><a class="reference internal" href="#which-elements-of-markdown-are-supported">Which elements of Markdown are supported?</a><ul>
-<li><a class="reference internal" href="#notes-on-implementation">Notes on implementation</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#autocompletion-doesn-t-work">Autocompletion doesn”t work</a></li>
-<li><a class="reference internal" href="#syntax-highlighting-is-broken-after-uninstall">Syntax-highlighting is broken after uninstall</a></li>
-<li><a class="reference internal" href="#trailing-whitespace-is-automatically-removed-but-i-don-t-want-that">Trailing whitespace is automatically removed, but I don”t want that</a></li>
+<li><a class="reference internal" href="#l-auto-completion-ne-fonctionne-pas">L”auto-complétion ne fonctionne pas</a></li>
+<li><a class="reference internal" href="#la-mise-en-evidence-de-la-syntaxe-est-cassee-apres-la-desinstallation">La mise en évidence de la syntaxe est cassée après la désinstallation</a></li>
+<li><a class="reference internal" href="#les-espaces-vides-sont-automatiquement-supprimes-mais-je-ne-veux-pas-que">Les espaces vides sont automatiquement supprimés, mais je ne veux pas que</a></li>
 </ul>
 </li>
 </ul>
@@ -193,7 +179,7 @@
           <a href="tutoriels.html" title="KOM C LE TUTORIEL"
              >précédent</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Documentation autoDocTest 1.0</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">KOM C LA FAQ</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Frequently Asked Questions</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

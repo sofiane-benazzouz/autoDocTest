@@ -1,9 +1,3 @@
-# KOM C LA FAQ
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, **you need** to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-
-## Amazing Doc
-    isn't it ?
-
 # Frequently Asked Questions
 
 - [Spell-check doesn't work; how do I enable it?](#spell-check-doesnt-work-how-do-i-enable-it)
@@ -13,37 +7,37 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 - [Syntax-highlighting is broken after uninstall](#syntax-highlighting-is-broken-after-uninstall)
 - [Trailing whitespace is automatically removed, but I don't want that](#trailing-whitespace-is-automatically-removed-but-i-dont-want-that)
 
-## Spell-check doesn't work; how do I enable it?
+## Le correcteur orthographique ne fonctionne pas ; comment l'activer ?
 
-The core-package `spell-check` doesn't scan documents in the `text.md` by default. You can easily add this yourself:
+Le paquet de base "vérification orthographique" ne scanne pas les documents dans le "text.md" par défaut. Vous pouvez facilement l'ajouter vous-même :
 
-- Open the Atom settings, and find the Packages tab
-- Search for the `spell-check` package; you can find it under the Core Packages
-- Open the settings for `spell-check`
-- Append `text.md` to the list of grammars (make sure the scopes are comma-separated)
-- Reload Atom to make sure the updated settings take effect
+- Ouvrez les paramètres Atom, et trouvez l'onglet Paquets
+- Recherchez le paquet "correcteur orthographique" ; vous pouvez le trouver sous les paquets de base
+- Ouvrez les paramètres du "correcteur orthographique".
+- Ajoutez `text.md` à la liste des grammaires (veillez à ce que les champs soient séparés par des virgules)
+- Rechargez Atom pour vous assurer que les paramètres mis à jour prennent effet
 
-## Some of my Markdown elements aren't highlighted
+## Certains de mes éléments de Markdown ne sont pas mis en évidence
 
-`language-markdown` parses your Markdown document; it does not directly color the different elements. This is done by the syntax-theme you are using. There's a good chance that your syntax-theme doesn't support all the different elements that `language-markdown` recognizes. You can ask the author of the theme to add better support for `language-markdown`, or [add styles to your custom stylesheet](http://flight-manual.atom.io/using-atom/sections/basic-customization/#style-tweaks). You can also try one of the tried and tested syntax-themes featured above. If you can't get it to work, feel free to [open an issue](https://github.com/burodepeper/language-markdown/issues/new/), and I'll see what I can do.
+La fonction "language markdown" analyse votre document Markdown ; elle ne colore pas directement les différents éléments. Cela est fait par le thème syntaxique que vous utilisez. Il y a de fortes chances que votre thème syntaxique ne prenne pas en charge tous les différents éléments que "language markdown" reconnaît. Vous pouvez demander à l'auteur du thème d'ajouter un meilleur support pour "language markdown", ou [ajouter des styles à votre feuille de style personnalisée] (http://flight-manual.atom.io/using-atom/sections/basic-customization/#style-tweaks). Vous pouvez également essayer l'un des thèmes syntaxiques éprouvés présentés ci-dessus. Si vous ne parvenez pas à le faire fonctionner, n'hésitez pas à [ouvrir un numéro] (https://github.com/burodepeper/language-markdown/issues/new/), et je verrai ce que je peux faire.
 
-## Which elements of Markdown are supported?
+## Quels sont les éléments de la démarque qui sont pris en charge ?
 
-Because there is no clear Markdown standard, I've chosen to follow the [CommonMark Spec](http://spec.commonmark.org/) as closely as possible within the Atom environment. On top of that, I've implemented support for a few extensions: Github Flavored Markdown, Markdown Extra, CriticMark, Front Matter, and R Markdown. Together, I believe these specs cover a solid 98% of your day-to-day Markdown needs. If you feel that an element is missing, please [open an issue](https://github.com/burodepeper/language-markdown/issues/new/).
+Comme il n'y a pas de norme de démarquage claire, j'ai choisi de suivre la [CommonMark Spec] (http://spec.commonmark.org/) aussi fidèlement que possible dans l'environnement Atom. De plus, j'ai mis en place un support pour quelques extensions : Github Flavored Markdown, Markdown Extra, CriticMark, Front Matter et R Markdown. Ensemble, je pense que ces spécifications couvrent 98% de vos besoins quotidiens en matière de démarque. Si vous pensez qu'un élément manque, veuillez [ouvrir un numéro] (https://github.com/burodepeper/language-markdown/issues/new/).
 
-#### Notes on implementation
+#### Notes sur la mise en œuvre
 
 - Raw `html` is included when you have the default `language-html` grammar enabled
-- The Github Flavored `task-lists` are implemented as part of 'normal' `lists`
-- Setext-headers (underlined-headers) are not supported
-- `indented-code-blocks` have been disabled to prevent false-positives; use `fenced-code-blocks` instead ([more details](https://github.com/burodepeper/language-markdown/issues/88#issuecomment-183344420))
-- Github tables require pipes at the start of each line, and cells need a padding of at least one space; this is a suggested convention to prevent false positives
+- Les "listes de tâches" aromatisées à la Github sont mises en œuvre dans le cadre des "listes" normales.
+- Les en-têtes de texte (soulignés) ne sont pas pris en charge
+- Les "blocs de code indenté" ont été désactivés pour éviter les faux positifs ; utilisez plutôt des "blocs de code clôturé" ([plus de détails](https://github.com/burodepeper/language-markdown/issues/88#issuecomment-183344420))
+- Les tables Github nécessitent des tuyaux au début de chaque ligne, et les cellules ont besoin d'un rembourrage d'au moins un espace ; c'est une convention suggérée pour éviter les faux positifs
 
-## Autocompletion doesn't work
+## L'auto-complétion ne fonctionne pas
 
-Autocompletion doesn't work out-of-the-box with Markdown documents. It is possible to enable it, but it might need some tinkering. In the `autocomplete-plus` settings, make sure that Markdown files aren't blacklisted. Additionally, it might help to switch the default provider to Fuzzy.
+L'auto-complétion ne fonctionne pas avec les documents de démarque. Il est possible de l'activer, mais il pourrait nécessiter quelques retouches. Dans les paramètres de l'option `autocomplete-plus`, assurez-vous que les fichiers Markdown ne sont pas mis sur liste noire. De plus, il peut être utile de changer le fournisseur d'accès par défaut pour Fuzzy.
 
-For Atom to index your Markdown documents as symbols, you have to add the following to your `config.cson`:
+Pour qu'Atom puisse indexer vos documents Markdown sous forme de symboles, vous devez ajouter ce qui suit à votre fichier `config.cson` :
 
 ```coffee
 '.text.md':
@@ -54,20 +48,20 @@ For Atom to index your Markdown documents as symbols, you have to add the follow
                 typePriority: 1
 ```
 
-You can find additional information in [this issue](https://github.com/burodepeper/language-markdown/issues/150).
+Vous trouverez des informations complémentaires dans [ce numéro] (https://github.com/burodepeper/language-markdown/issues/150).
 
-## Syntax-highlighting is broken after uninstall
+## La mise en évidence de la syntaxe est cassée après la désinstallation
 
-The core-package `language-gfm` is automatically disabled (unless you've enabled the setting that prevents this) when using `language-markdown` to avoid any conflicts. Because `language-markdown` is intended as a drop-in replacement you most likely won't need both anyway. However, if you uninstall `language-markdown`, `language-gfm` doesn't automatically get re-activated. There's no API available to do this, so you'll have to re-activate `language-gfm` manually, which is quite easy.
+Le paquet de base `language-gfm` est automatiquement désactivé (sauf si vous avez activé le paramètre qui l'empêche) lors de l'utilisation de `language-markdown` pour éviter tout conflit. Parce que `language-markdown` est conçu comme un remplacement de remplacement, vous n'aurez probablement pas besoin des deux de toute façon. Cependant, si vous désinstallez `language-markdown`, `language-gfm` ne sera pas automatiquement réactivé. Il n'y a pas d'API disponible pour faire cela, donc vous devrez réactiver `language-gfm` manuellement, ce qui est assez facile.
 
-1. Open the "Settings" and go to the "Packages" tab
-2. Search for `language-gfm`
-3. Click `Enable` to re-activate it
-4. You probably want to reload Atom to make sure the change takes effect
+1. Ouvrez les "Paramètres" et allez à l'onglet "Paquets
+2. Recherche de "langue-gfm
+3. Cliquez sur "Activer" pour le réactiver
+4. Vous voulez probablement recharger Atom pour vous assurer que le changement prend effet
 
-## Trailing whitespace is automatically removed, but I don't want that
+## Les espaces vides sont automatiquement supprimés, mais je ne veux pas que
 
-By default, Atom removes all trailing whitespace when a file is saved. You can disable it by setting the following flag in your `config.cson` for the `.md.text` scope. For more background, see [#115](https://github.com/burodepeper/language-markdown/issues/115).
+Par défaut, Atom supprime tous les espaces arrière lors de l'enregistrement d'un fichier. Vous pouvez le désactiver en plaçant le drapeau suivant dans votre fichier `config.cson` pour la portée `.md.text`. Pour plus d'informations, voir [#115](https://github.com/burodepeper/language-markdown/issues/115).
 
 ```coffee
 '*':
