@@ -8,7 +8,7 @@ Bienvenue sur la meilleure documentation jamais créée!
 
 .. toctree::
     :maxdepth: 2
-    :caption: Contenus
+    :caption: Catégories:
     
     guides
     tutoriels
@@ -17,38 +17,3 @@ Bienvenue sur la meilleure documentation jamais créée!
     rgpd
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-
-test de section
-===============
-
-1. Bonjour
-2. test
-3. Ho là là
-
-
-Tableau test
-============
-
-+-------------+-------------+------------+-------------+------------+
-|             |    TEST1    |   TEST2    |  TEST3      |   TEST 4   |
-+=============+=============+============+=============+============+
-|    JOUR1    +      X      +            +             +            +
-+-------------+-------------+------------+-------------+------------+  
-|    JOUR2    +             +      X     +             +            +
-+-------------+-------------+------------+-------------+------------+  
-|    JOUR3    +             +            +       X     +            +
-+-------------+-------------+------------+-------------+------------+  
-
-
-
-
-
-.. include:: ../../README.rst
