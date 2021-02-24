@@ -1,6 +1,6 @@
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/nodejsfull.svg" heigth="300px" width="300px"/>](https://nodejs.org)
 
-# Node.js: Tutorial
+# Tutoriel
 
 Use this tutorial as a guide to learn Node.js. Each unit contains an annotated lesson with working examples.
 
@@ -22,8 +22,8 @@ Suggested prerequisites
 ====================
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/javascript.svg" width="50px" height="50px" />]</a>
 
-Introduction
-====================
+## Introduction
+
 ```Javascript
 /*
  Node.js
@@ -82,8 +82,8 @@ console.log('Listening on port 8080...');
  */
 ```
 
-Events
-====================
+## Events
+
 ```Javascript
 /* Events
 
@@ -117,8 +117,8 @@ logger.emit('error', 'This is the second error');
  */
 ```
 
-Streams
-====================
+## Streams
+
 ```Javascript
 /* Streams
 
@@ -180,8 +180,8 @@ console.log('Listening on port 8080...');
  */
 ```
 
-Modules
-====================
+## Modules
+
 ```Javascript
 /*
 Modules:
@@ -208,14 +208,14 @@ module.exports = moduleFunction;
  To run, go to "8 - Module Loader"
 */
 ```
-Install
-====================
+## Install
+
 ```Terminal
 npm install
 ```
 
-Run the tutorial (each file is numbered)
-====================
+## Run the tutorial (each file is numbered)
+
 ```Terminal
 node '01 - Introduction.js'
 ```
