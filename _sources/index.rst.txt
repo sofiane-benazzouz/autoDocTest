@@ -12,5 +12,7 @@ Bienvenue sur la meilleure documentation jamais créée par la meilleure équipe
     faq
     contribute
     rgpd
+    contact
+
 
 
