@@ -1,10 +1,10 @@
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/nodejsfull.svg" heigth="300px" width="300px"/>](https://nodejs.org)
 
-# Tutoriel
+# Node.js: Tutorial
 
 Use this tutorial as a guide to learn Node.js. Each unit contains an annotated lesson with working examples.
 
-Topics
+## Topics
 ================
 - Introduction
 - Events
@@ -18,12 +18,12 @@ Topics
 - Socket.io
 - Persisting Data with Redis
 
-Suggested prerequisites
+## Suggested prerequisites
 ====================
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/javascript.svg" width="50px" height="50px" />]</a>
 
 ## Introduction
-
+====================
 ```Javascript
 /*
  Node.js
@@ -83,7 +83,7 @@ console.log('Listening on port 8080...');
 ```
 
 ## Events
-
+====================
 ```Javascript
 /* Events
 
@@ -118,7 +118,7 @@ logger.emit('error', 'This is the second error');
 ```
 
 ## Streams
-
+====================
 ```Javascript
 /* Streams
 
@@ -181,7 +181,7 @@ console.log('Listening on port 8080...');
 ```
 
 ## Modules
-
+====================
 ```Javascript
 /*
 Modules:
@@ -209,13 +209,13 @@ module.exports = moduleFunction;
 */
 ```
 ## Install
-
+====================
 ```Terminal
 npm install
 ```
 
 ## Run the tutorial (each file is numbered)
-
+====================
 ```Terminal
 node '01 - Introduction.js'
 ```
@@ -226,7 +226,7 @@ node '02 - Events.js'
 node '03 - Streams.js'
 ```
 
-## Author
+### Author
 
 **[soso]**
 
