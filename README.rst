@@ -11,7 +11,7 @@ Prérequis
 
 - NodeJS_
 .. _NodeJS : https://nodejs.org/en/download/
-- _MySQL
+- MySQL_
 .. _MySQL : https://www.mysql.com/fr/downloads/
 
 
