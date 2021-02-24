@@ -1,4 +1,4 @@
-# data-directory
+# guides 
 
 A Node.js module to recursively load a directory of YAML, JSON, and Markdown files into a JavaScript object.
 
