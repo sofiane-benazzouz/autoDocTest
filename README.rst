@@ -4,7 +4,7 @@ Démarrage facile du projet
 
 Ici, vous pourrez trouver une documentation rapide afin de démarrer le projet.
 
-** Pour une documentation plus complète, veuillez vous rendre à cette adresse :** https://zarhkoh.github.io/autoDocTest/
+**Pour une documentation plus complète, veuillez vous rendre à cette adresse :** https://zarhkoh.github.io/autoDocTest/
 
 Prérequis
 =========
