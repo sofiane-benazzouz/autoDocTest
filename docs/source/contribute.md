@@ -1,6 +1,6 @@
 # Contribution
 
-# Comment contribuer au projet
+## Comment contribuer au projet
 
 Notre projet vous interesse et vous souhaitez y participer!?
 Il suffit de cloner le projet, de créer une branche et d'y effectuer vos modifications.
