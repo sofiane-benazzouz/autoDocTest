@@ -15,6 +15,12 @@ Prérequis
 .. _MySQL : https://www.mysql.com/fr/downloads/
 
 
+
+Optionnel
+=========
+
+- MySQL Workbench / Datagrip / phpmyadmin
+
 Démarrage rapide
 ================
 
@@ -28,9 +34,24 @@ Installation des dépendances
 ****************************
 Dans un terminal, rendez vous dans le dossier du projet et entrez ``npm install``
 
+Configuration des informations de la base de données
+****************************************************
+
+Modifier les identifiants dans "apimspr/.env.local"
+
+DB_USER= utilisateur
+DB_PASSWORD= votremdp
+DB_PORT= port de la base de données
+
+
 Lancement du serveur
 ********************
 Pour lancez le serveur, utilisez la commande ``npm run local``
+
+Ouvrez un navigateur à l'adresse http://localhost:3000
+
+Documentation sur les requêtes
+Utilisez Swagger pour voir les informations concernant les requêtes via l'URL http://localhost:3000/api-docs/
 
 Lancement des tests
 *******************
