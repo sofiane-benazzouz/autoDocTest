@@ -19,11 +19,11 @@ Use this tutorial as a guide to learn Node.js. Each unit contains an annotated l
 - Persisting Data with Redis
 
 ## Suggested prerequisites
-====================
+
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/javascript.svg" width="50px" height="50px" />]</a>
 
 ## Introduction
-====================
+
 ```Javascript
 /*
  Node.js
@@ -83,7 +83,7 @@ console.log('Listening on port 8080...');
 ```
 
 ## Events
-====================
+
 ```Javascript
 /* Events
 
@@ -118,7 +118,7 @@ logger.emit('error', 'This is the second error');
 ```
 
 ## Streams
-====================
+
 ```Javascript
 /* Streams
 
@@ -181,7 +181,7 @@ console.log('Listening on port 8080...');
 ```
 
 ## Modules
-====================
+
 ```Javascript
 /*
 Modules:
@@ -209,13 +209,13 @@ module.exports = moduleFunction;
 */
 ```
 ## Install
-====================
+
 ```Terminal
 npm install
 ```
 
 ## Run the tutorial (each file is numbered)
-====================
+
 ```Terminal
 node '01 - Introduction.js'
 ```
@@ -231,7 +231,7 @@ node '03 - Streams.js'
 **[soso]**
 
 Continue Learning
-====================
+
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/javascript.svg" width="50px" height="50px" />](https://github.com/MartinChavez/Learn-Javascript)</a>
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/nodejs.svg" width="50px" height="50px" />](https://github.com/MartinChavez/Node.js-Tutorial)</a>
 <a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/angular.svg" width="50px" height="50px" />](https://github.com/MartinChavez/AngularJs-Basics)</a>
