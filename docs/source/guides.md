@@ -1,6 +1,6 @@
 # guides 
 
-A Node.js module to recursively load a directory of YAML, JSON, and Markdown files into a JavaScript object.
+Un module Node.js pour charger récursivement un répertoire de fichiers YAML, JSON et Markdown dans un objet JavaScript.
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install @github-docs/data-directory
 
 ## Usage
 
-Given the following file tree:
+Étant donné l'arborescence de fichiers suivante:
 
 ```
 $ tree data
@@ -21,7 +21,7 @@ data
     └── baz.md
 ```
 
-and the following content in each file:
+et le contenu suivant dans chaque dossier:
 
 ```
 $ cat foo.json
@@ -34,7 +34,7 @@ $ cat nested/baz.md
 I am markdown!
 ```
 
-then running this code:
+puis exécution de ce code:
 
 ```js
 const path = require('path')
@@ -42,7 +42,7 @@ const dataDirectory = require('@github-docs/data-directory')
 const data = dataDirectory(path.join(__dirname, 'data'))
 ```
 
-will return this object:
+rendra cet objet:
 
 ```js
 {
@@ -53,9 +53,8 @@ will return this object:
 ```
 
 ## API
-
-This module exports a single synchronous function `dataDirectory` that returns
-an Object.
+Ce module exporte une seule fonction synchrone, `dataDirectory`, qui renvoie
+un Objet.
 
 ### `dataDirectory(directory, [options])`
 
