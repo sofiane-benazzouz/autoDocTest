@@ -9,6 +9,11 @@ Ici, vous pourrez trouver une documentation rapide afin de démarrer le projet.
 Prérequis
 =========
 
+- NodeJS_
+.. _NodeJS : https://nodejs.org/en/download/
+- MySQL v.5.0 ou supérieur
+
+
 Démarrage
 #########
 
