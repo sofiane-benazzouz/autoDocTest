@@ -9,7 +9,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tutoriels &mdash; Documentation autoDocTest 1.0</title>
+  <title>Node.js: Tutorial &mdash; Documentation autoDocTest 1.0</title>
   
 
   
@@ -184,7 +184,16 @@
               <p class="caption"><span class="caption-text">Catégories:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="guides.html">Guide</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutoriels</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Node.js: Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#topics">Topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#suggested-prerequisites">Suggested prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#events">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#streams">Streams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#modules">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#install">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#run-the-tutorial-each-file-is-numbered">Run the tutorial (each file is numbered)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#continue-learning">Continue Learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contribute.html#comment-contribuer-au-projet">Comment contribuer au projet</a></li>
@@ -229,7 +238,7 @@
       </li>
 
         
-      <li>Tutoriels</li>
+      <li>Node.js: Tutorial</li>
     
     
       <li class="catalyst-breadcrumbs-aside">
@@ -259,15 +268,251 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
              <article itemprop="articleBody" id="catalyst-article" class="catalyst-article">
               
-  <div class="section" id="tutoriels">
-<h1>Tutoriels<a class="headerlink" href="#tutoriels" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Maecenas et enim arcu. Phasellus ornare erat sit amet metus sagittis accumsan. Suspendisse vitae tempus nisi, in consequat nisl. Fusce quis libero non mi dictum suscipit. Cras elit lorem, rhoncus eget ultricies ut, faucibus sed orci. Sed et arcu convallis, vestibulum ipsum et, mollis mauris. Sed elementum tempus magna quis pharetra. Aenean vel bibendum lectus, <em>sit amet tincidunt neque</em>. Quisque facilisis lorem neque, a condimentum nisi tincidunt sed. Morbi at lorem sapien.</p>
-<div class="section" id="amazing-doc">
-<h2>Amazing Doc<a class="headerlink" href="#amazing-doc" title="Lien permanent vers ce titre">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">isn</span><span class="s1">&#39;t it ?s</span>
+  <p><a name="README"><a class="reference external" href="https://nodejs.org"><img src="https://martinchavez.github.io/Assets/Logos/nodejsfull.svg" heigth="300px" width="300px"/></a></p>
+<div class="section" id="node-js-tutorial">
+<h1>Node.js: Tutorial<a class="headerlink" href="#node-js-tutorial" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Use this tutorial as a guide to learn Node.js. Each unit contains an annotated lesson with working examples.</p>
+</div>
+<div class="section" id="topics">
+<h1>Topics<a class="headerlink" href="#topics" title="Lien permanent vers ce titre">¶</a></h1>
+<ul class="simple">
+<li><p>Introduction</p></li>
+<li><p>Events</p></li>
+<li><p>Streams</p></li>
+<li><p>File System Manipulation</p></li>
+<li><p>Uploading Files</p></li>
+<li><p>Modules</p></li>
+<li><p>NPM</p></li>
+<li><p>Express</p></li>
+<li><p>Express Routes</p></li>
+<li><p>Socket.io</p></li>
+<li><p>Persisting Data with Redis</p></li>
+</ul>
+</div>
+<div class="section" id="suggested-prerequisites">
+<h1>Suggested prerequisites<a class="headerlink" href="#suggested-prerequisites" title="Lien permanent vers ce titre">¶</a></h1>
+<p><a name="README"><a class="reference external" href="https://github.com/MartinChavez/Learn-Javascript"><img src="https://martinchavez.github.io/Assets/Logos/javascript.svg" width="50px" height="50px" /></a></a></p>
+</div>
+<div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="highlight-Javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> Node.js</span>
+
+<span class="cm"> - Allows you to build scalable network applications using JavaScript on the server-side.</span>
+<span class="cm"> - Runs on top of the V8 JavaScript Runtime (same that is running on the Chrome browser)</span>
+
+<span class="cm"> What can you build?</span>
+
+<span class="cm"> - Web socket Server</span>
+<span class="cm"> - File Upload client</span>
+<span class="cm"> - Ad Server</span>
+<span class="cm"> - Real-time data apps</span>
+
+<span class="cm"> Misconceptions</span>
+
+<span class="cm"> - Node.js is not a web framework</span>
+<span class="cm"> - Node.js is not multi-threaded</span>
+
+
+<span class="cm"> The event loop</span>
+
+<span class="cm"> - The first time node interprets the js code and executes it, it registers the events it finds</span>
+<span class="cm"> - Once the script has been executed, node starts the event loop, which checks for events continuously</span>
+<span class="cm"> - Once node finds a new event, it will trigger the callback associated with such event</span>
+<span class="cm"> - Allows us to write code that is non-blocking</span>
+
+<span class="cm"> The event Queue</span>
+
+<span class="cm"> - Queues the events for the event loop</span>
+<span class="cm"> - Processes the events, one at a time</span>
+
+<span class="cm"> */</span>
+
+
+<span class="cm">/* How to run node.js */</span>
+<span class="c1">// In this example, we will create a node server and serve an HTTP response</span>
+
+<span class="c1">// Use the &#39;require&#39; keyword to load modules(libraries)</span>
+<span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
+<span class="c1">// In general, you need to specify a call-back function with most of the Node modules methods</span>
+<span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mf">200</span><span class="p">);</span> <span class="c1">//Status code in header</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">&quot;Introduction&quot;</span><span class="p">);</span> <span class="c1">//Response body</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">();</span> <span class="c1">//Close the connection</span>
+<span class="p">}).</span><span class="nx">listen</span><span class="p">(</span><span class="mf">8080</span><span class="p">);</span> <span class="c1">//Port in which node will listen for connections</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Listening on port 8080...&#39;</span><span class="p">);</span>
+
+<span class="cm">/* Run the following cmd to start node and run the server</span>
+<span class="cm"> node &#39;01 - Introduction.js&#39;</span>
+<span class="cm"> */</span>
+
+<span class="cm">/* Run the following cmd to make an HTTP request to your local server (you should get a response)</span>
+<span class="cm"> curl http://localhost:8080</span>
+<span class="cm"> */</span>
 </pre></div>
 </div>
 </div>
+<div class="section" id="events">
+<h1>Events<a class="headerlink" href="#events" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="highlight-Javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Events</span>
+
+<span class="cm"> - Similar to how the DOM works, Node.js triggers events and handles the callback functions</span>
+<span class="cm"> - Many objects in Node emit events, in general, these are inherited from the EventEmitter constructor</span>
+<span class="cm"> */</span>
+<span class="c1">// Loading the EventEmitter constructor</span>
+<span class="kd">var</span> <span class="nx">EventEmitter</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;events&#39;</span><span class="p">).</span><span class="nx">EventEmitter</span><span class="p">;</span>
+
+<span class="c1">//In this case, we want the logger to emit Events by adding a listener</span>
+<span class="kd">var</span> <span class="nx">logger</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">EventEmitter</span><span class="p">();</span>
+
+<span class="c1">// The following code demonstrates the syntax for listening to the error event,</span>
+<span class="c1">// and executing the callback function</span>
+<span class="nx">logger</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;ERR: &#39;</span> <span class="o">+</span> <span class="nx">message</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// The following code triggers the &#39;error&#39; event</span>
+<span class="nx">logger</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="s1">&#39;This is the first error&#39;</span><span class="p">);</span>
+<span class="nx">logger</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="s1">&#39;This is the second error&#39;</span><span class="p">);</span>
+
+<span class="cm">/* Run the following cmd to start node and listen/generate events</span>
+<span class="cm"> node &#39;02 - Events.js&#39;</span>
+
+<span class="cm"> You should see the following output:</span>
+
+<span class="cm"> ERR: This is the first error</span>
+<span class="cm"> ERR: This is the second error</span>
+
+<span class="cm"> */</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="streams">
+<h1>Streams<a class="headerlink" href="#streams" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="highlight-Javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Streams</span>
+
+<span class="cm"> When writing applications that depend consistently on network access or accessing files on the disk,</span>
+<span class="cm"> it is important to understand and optimize how the data is being transferred,</span>
+<span class="cm"> this is an excellent use-case for Node.js.</span>
+
+<span class="cm"> Stream:</span>
+
+<span class="cm"> - Streams are like channels, where data flows through</span>
+<span class="cm"> - There are two main different types: readable and writeable</span>
+<span class="cm"> - Readable stream: Inherits from EventEmitter</span>
+
+<span class="cm"> */</span>
+<span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
+
+<span class="c1">// &#39;request&#39; is a readable stream</span>
+<span class="c1">// &#39;response&#39; is a writeable stream</span>
+<span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// With the following example, we print to the console the data that we get from the client</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mf">200</span><span class="p">);</span>
+
+    <span class="nx">request</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;readable&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="kd">var</span> <span class="nx">chunk</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+        <span class="k">while</span> <span class="p">(</span><span class="kc">null</span> <span class="o">!==</span> <span class="p">(</span><span class="nx">chunk</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">read</span><span class="p">()))</span> <span class="p">{</span>
+            <span class="nx">response</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">chunk</span><span class="p">);</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">chunk</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+    <span class="nx">request</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;end&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">&#39;- end of request&#39;</span><span class="p">);</span>
+    <span class="p">});</span>
+
+<span class="p">}).</span><span class="nx">listen</span><span class="p">(</span><span class="mf">8080</span><span class="p">);</span>
+
+<span class="c1">//Note: This example could be simplified by using:</span>
+<span class="cm">/*</span>
+<span class="cm"> http.createServer(function (request, response) {</span>
+<span class="cm"> response.writeHead(200);</span>
+<span class="cm"> // pipe helps us write to a writeable stream as soon as you read from a readable stream</span>
+<span class="cm"> request.pipe(response);</span>
+<span class="cm"> }).listen(8080);</span>
+<span class="cm"> */</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Listening on port 8080...&#39;</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm"> Run the following cmd to start node and run the server:</span>
+
+<span class="cm"> node &#39;03 - Streams.js&#39;</span>
+
+<span class="cm"> Run the following cmd to make an HTTP request to your local server:</span>
+
+<span class="cm"> curl -d &#39;from client&#39; http://localhost:8080</span>
+
+<span class="cm"> Expected response:</span>
+
+<span class="cm"> &quot;from client- end of request&quot;</span>
+<span class="cm"> */</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="modules">
+<h1>Modules<a class="headerlink" href="#modules" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="highlight-Javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">Modules:</span>
+
+<span class="cm">- Libraries that are loaded in order to use them in the current context</span>
+<span class="cm">- The &#39;require&#39; keyword is used to load them</span>
+
+<span class="cm">*/</span>
+<span class="kd">var</span> <span class="nx">moduleFunction</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Module loaded&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// In order to expose this method (make it public), we need to use module.exports</span>
+<span class="c1">// &#39;exports&#39; defines what &#39;require&#39; returns</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">moduleFunction</span><span class="p">;</span>
+
+<span class="c1">// Explicitly setting a function as a public method (same behavior as previous example)</span>
+<span class="cm">/*</span>
+<span class="cm"> exports.moduleExport = function(){</span>
+<span class="cm"> console.log(&quot;Module loaded by using exports&quot;);</span>
+<span class="cm"> }</span>
+<span class="cm"> */</span>
+
+<span class="cm">/*</span>
+<span class="cm"> To run, go to &quot;8 - Module Loader&quot;</span>
+<span class="cm">*/</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="install">
+<h1>Install<a class="headerlink" href="#install" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="highlight-Terminal notranslate"><div class="highlight"><pre><span></span>npm install
+</pre></div>
+</div>
+</div>
+<div class="section" id="run-the-tutorial-each-file-is-numbered">
+<h1>Run the tutorial (each file is numbered)<a class="headerlink" href="#run-the-tutorial-each-file-is-numbered" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="highlight-Terminal notranslate"><div class="highlight"><pre><span></span>node &#39;01 - Introduction.js&#39;
+</pre></div>
+</div>
+<div class="highlight-Terminal notranslate"><div class="highlight"><pre><span></span>node &#39;02 - Events.js&#39;
+</pre></div>
+</div>
+<div class="highlight-Terminal notranslate"><div class="highlight"><pre><span></span>node &#39;03 - Streams.js&#39;
+</pre></div>
+</div>
+<div class="section" id="author">
+<h2>Author<a class="headerlink" href="#author" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong><a class="reference external" href="https://github.com/MartinChavez">Martin Chavez</a></strong></p>
+</div>
+</div>
+<div class="section" id="continue-learning">
+<h1>Continue Learning<a class="headerlink" href="#continue-learning" title="Lien permanent vers ce titre">¶</a></h1>
+<p><a name="README"><a class="reference external" href="https://github.com/MartinChavez/Learn-Javascript"><img src="https://martinchavez.github.io/Assets/Logos/javascript.svg" width="50px" height="50px" /></a></a>
+<a name="README"><a class="reference external" href="https://github.com/MartinChavez/Node.js-Tutorial"><img src="https://martinchavez.github.io/Assets/Logos/nodejs.svg" width="50px" height="50px" /></a></a>
+<a name="README"><a class="reference external" href="https://github.com/MartinChavez/AngularJs-Basics"><img src="https://martinchavez.github.io/Assets/Logos/angular.svg" width="50px" height="50px" /></a></a>
+<a name="README"><a class="reference external" href="https://github.com/MartinChavez/AngularJS-Advanced-Topics"><img src="https://martinchavez.github.io/Assets/Logos/angular2.svg" width="50px" height="50px" /></a></a>
+<a name="README"><a class="reference external" href="https://github.com/MartinChavez/CSharp"><img src="https://martinchavez.github.io/Assets/Logos/csharp.svg" width="50px" height="50px" /></a></a>
+<a name="README"><a class="reference external" href="https://github.com/MartinChavez/LINQ"><img src="https://martinchavez.github.io/Assets/Logos/linq.svg" width="50px" height="50px" /></a></a>
+<a name="README"><a class="reference external" href="https://github.com/MartinChavez/jQueryBasics"><img src="https://martinchavez.github.io/Assets/Logos/jquery.svg" width="50px" height="50px" /></a></a>
+<a name="README"><a class="reference external" href="https://github.com/MartinChavez/HTML-CSS"><img src="https://martinchavez.github.io/Assets/Logos/htmlcss.svg" width="65px" height="50px" /></a></a>
+<a name="README"><a class="reference external" href="https://github.com/MartinChavez/HTML-CSS-Advanced-Topics"><img src="https://martinchavez.github.io/Assets/Logos/htmlcss2.svg" width="65px" height="50px" /></a></a></p>
 </div>
 
 
@@ -309,10 +554,19 @@
           <div class="catalyst-right-menu" id="catalyst-right-menu">
             <div class="catalyst-side-scroll" id="catalyst-side-scroll-right">
               <ul>
-<li><a class="reference internal" href="#">Tutoriels</a><ul>
-<li><a class="reference internal" href="#amazing-doc">Amazing Doc</a></li>
+<li><a class="reference internal" href="#">Node.js: Tutorial</a></li>
+<li><a class="reference internal" href="#topics">Topics</a></li>
+<li><a class="reference internal" href="#suggested-prerequisites">Suggested prerequisites</a></li>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#events">Events</a></li>
+<li><a class="reference internal" href="#streams">Streams</a></li>
+<li><a class="reference internal" href="#modules">Modules</a></li>
+<li><a class="reference internal" href="#install">Install</a></li>
+<li><a class="reference internal" href="#run-the-tutorial-each-file-is-numbered">Run the tutorial (each file is numbered)</a><ul>
+<li><a class="reference internal" href="#author">Author</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#continue-learning">Continue Learning</a></li>
 </ul>
 
             </div>
