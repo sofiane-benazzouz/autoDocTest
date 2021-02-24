@@ -21,16 +21,16 @@ Démarrage rapide
 
 Clonage du projet
 *****************
-Ouvrez un terminal et entrez la commande `` git clone https://github.com/Zarhkoh/autoDocTest.git ``
+Ouvrez un terminal et entrez la commande ``git clone https://github.com/Zarhkoh/autoDocTest.git``
 
 
 Installation des dépendances
 ****************************
-Dans un terminal, rendez vous dans le dossier du projet et entrez `` npm install ``
+Dans un terminal, rendez vous dans le dossier du projet et entrez ``npm install``
 
 Lancement du serveur
 ********************
-Pour lancez le serveur, utilisez la commande `` npm run local ``
+Pour lancez le serveur, utilisez la commande ``npm run local``
 
 Lancement des tests
 *******************
