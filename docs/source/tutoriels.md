@@ -20,7 +20,7 @@ Topics
 
 Suggested prerequisites
 ====================
-<a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/javascript.svg" width="50px" height="50px" />](https://github.com/MartinChavez/Learn-Javascript)</a>
+<a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/javascript.svg" width="50px" height="50px" />]</a>
 
 Introduction
 ====================
@@ -228,7 +228,7 @@ node '03 - Streams.js'
 
 ## Author
 
-**[soso](https://github.com/)**
+**[soso]**
 
 Continue Learning
 ====================
