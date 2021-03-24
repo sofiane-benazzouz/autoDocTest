@@ -25,6 +25,8 @@ jobs:
 
       # 2. Partie spécifique à Sphinx (installation des
       #    dépendances et génération de la doc)
+      
+      
 
       - name: "Set up Python"
         uses: actions/setup-python@v1
@@ -36,7 +38,15 @@ jobs:
           pip3 install setuptools
           pip3 install sphinx recommonmark
           pip3 install sphinx-rtd-theme
-
+          
+      - name: "set up node"
+      - uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14.x
+          
+      - name: "Install node dependencies"
+        run: |
+          npm install jsdoc -g
 
       - name: "Build Sphinx Doc"
         run: |
